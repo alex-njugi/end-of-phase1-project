@@ -2,39 +2,39 @@
     "fugitives": [
       {
         "id": 1,
-        "name": "",
-        "image": "images/john_doe.jpg",
+        "name": "PANEK DANIEL TOMASZ",
+        "image": "images/daniel.png",
         "description": "Wanted for armed robbery."
       },
       {
         "id": 2,
-        "name": "Jane Smith",
-        "image": "images/jane_smith.jpg",
-        "description": "Suspected in multiple fraud cases."
+        "name": "LAVRIC JANKO",
+        "image": "images/janko.png",
+        "description": "Crime : Unlawfull abductions."
       },
       {
         "id": 3,
-        "name": "Jane Smith",
-        "image": "images/jane_smith.jpg",
-        "description": "Suspected in multiple fraud cases."
+        "name": "KANYS, RENALDAS",
+        "image": "images/kanys.png",
+        "description": "Crime : Murder, grievous bodily injury."
       },
       {
         "id": 4,
-        "name": "Jane Smith",
-        "image": "images/jane_smith.jpg",
-        "description": "Suspected in multiple fraud cases."
+        "name": "OUALI KARIM",
+        "image": "images/karim.png",
+        "description": "Crime : Suspected in multiple fraud cases."
       },
       {
         "id": 5,
-        "name": "Jane Smith",
-        "image": "images/jane_smith.jpg",
-        "description": "Suspected in multiple fraud cases."
+        "name": "ANDRIJA NIKOLIC",
+        "image": "images/nikolic.png",
+        "description": "Crime : Illicit trafficking in narcotic drugs."
       },
       {
         "id": 6,
-        "name": "Mike Johnson",
-        "image": "images/mike_johnson.jpg",
-        "description": "Escaped convict, considered dangerous."
+        "name": "OKOLICANY ROBERT",
+        "image": "images/robert.png",
+        "description": "crime : Escaped convict, considered dangerous."
       }
     ]
   }

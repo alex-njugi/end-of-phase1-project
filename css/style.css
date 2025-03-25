@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: #181818;
+    background: #000000;
     color: #FFFDD0;
     padding: 20px;
     display: flex;
@@ -55,22 +55,6 @@ h1 {
     padding: 20px;
 }
 
-.criminal-card {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.criminal-card img {
-    width: 100%;
-    height: auto;
-}
-
-
 .alert-button {
     background-color: black;
     color: white;
@@ -94,8 +78,8 @@ h1 {
   
   #details-container {
     display: none; /* Hidden by default */
-    background: rgb(0, 0, 0);
-    color: white;
+    background: white;
+    color: black;
     padding: 20px;
     border: 2px solid rgb(173, 2, 2);
     box-shadow: 0 0 10px rgb(0, 0, 0);
@@ -117,3 +101,76 @@ h1 {
     margin-top: 10px;
     cursor: pointer;
 }
+
+.criminal-card {
+    background: white;
+    border: 2px solid red;
+    padding: 15px;
+    margin: 15px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 10px red;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.criminal-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px red;
+}
+
+/* Image Styling */
+.criminal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Name Styling */
+.criminal-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+}
+
+/* Description Styling */
+.criminal-card p {
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+    padding: 5px 10px;
+}
+
+/* Button Styling */
+.view-more, .delete-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 8px 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0 0 5px red;
+}
+
+.view-more:hover {
+    background-color: red;
+    color: black;
+    box-shadow: 0 0 10px red;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+    box-shadow: 0 0 10px red;
+}
+
+
