@@ -70,6 +70,7 @@ h1 {
     height: auto;
 }
 
+
 .alert-button {
     background-color: black;
     color: white;
@@ -81,13 +82,15 @@ h1 {
     letter-spacing: 1px;
     transition: 0.3s;
     box-shadow: 0 0 10px red;
-  }
-  
-  .alert-button:hover {
-    background-color: red;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.alert-button:hover {
+    background-color: rgb(168, 6, 6);
     color: black;
     box-shadow: 0 0 20px red;
-  }
+}
   
   #details-container {
     display: none; /* Hidden by default */

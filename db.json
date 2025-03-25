@@ -1,0 +1,41 @@
+{
+    "fugitives": [
+      {
+        "id": 1,
+        "name": "",
+        "image": "images/john_doe.jpg",
+        "description": "Wanted for armed robbery."
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "image": "images/jane_smith.jpg",
+        "description": "Suspected in multiple fraud cases."
+      },
+      {
+        "id": 3,
+        "name": "Jane Smith",
+        "image": "images/jane_smith.jpg",
+        "description": "Suspected in multiple fraud cases."
+      },
+      {
+        "id": 4,
+        "name": "Jane Smith",
+        "image": "images/jane_smith.jpg",
+        "description": "Suspected in multiple fraud cases."
+      },
+      {
+        "id": 5,
+        "name": "Jane Smith",
+        "image": "images/jane_smith.jpg",
+        "description": "Suspected in multiple fraud cases."
+      },
+      {
+        "id": 6,
+        "name": "Mike Johnson",
+        "image": "images/mike_johnson.jpg",
+        "description": "Escaped convict, considered dangerous."
+      }
+    ]
+  }
+  
