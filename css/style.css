@@ -145,7 +145,7 @@ h1 {
 }
 
 /* Button Styling */
-.view-more, .delete-btn {
+.view-more, .delete-criminal {
     background-color: black;
     color: white;
     border: none;
@@ -164,11 +164,11 @@ h1 {
     box-shadow: 0 0 10px red;
 }
 
-.delete-btn {
+.delete-criminal {
     background-color: red;
 }
 
-.delete-btn:hover {
+.delete-criminal:hover {
     background-color: darkred;
     box-shadow: 0 0 10px red;
 }
