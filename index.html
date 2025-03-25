@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,15 +15,21 @@
         <input type="text" id="search" placeholder="Search criminals...">
     </header>
 
-     <div class="alert-container">
+    <div class="alert-container">
         <button class="alert-button">Welcome</button>
     </div>
 
+    <div id="details-container" class="hidden">
+        <h2 id="fugitive-name"></h2>
+        <img id="fugitive-image" src="" alt="Fugitive Image">
+        <p id="fugitive-description"></p>
+        <button id="close-details">Close</button>
+    </div>
+    
     <main>
         <div id="criminals-container"></div>
     </main>
-
+    
     <script src="js/index.js"></script>
 </body>
 </html>
-

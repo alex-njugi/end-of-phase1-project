@@ -88,3 +88,28 @@ h1 {
     box-shadow: 0 0 20px red;
   }
   
+  #details-container {
+    display: none; /* Hidden by default */
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    border: 2px solid rgb(173, 2, 2);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-top: 20px;
+    text-align: center;
+}
+
+#details-container img {
+    width: 200px; /* Adjust size */
+    height: auto;
+    margin-top: 10px;
+}
+
+#close-details {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
