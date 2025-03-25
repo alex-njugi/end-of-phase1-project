@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const fugitiveImage = document.getElementById("fugitive-image");
     const fugitiveDescription = document.getElementById("fugitive-description");
     const closeButton = document.getElementById("close-details");
+    const addForm = document.getElementById("add-fugitive-form");
+    const nameInput = document.getElementById("fugitive-name-input");
+    const imageInput = document.getElementById("fugitive-image-input");
+    const descriptionInput = document.getElementById("fugitive-description-input");
 
     let fugitivesData = []; // Store fetched data for filtering
 
@@ -15,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch("https://fireland-most-wanted.vercel.app/fugitives")
             .then(response => response.json())
             .then(data => {
-                fugitivesData = data; // Save original data
-                displayFugitives(data); // Display all fugitives initially
+                fugitivesData = data;
+                displayFugitives(data);
             })
             .catch(error => console.log("Error fetching data:", error));
     }
@@ -40,18 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
             criminalsContainer.appendChild(card);
         });
 
-        // Add event listeners
         document.querySelectorAll(".view-more").forEach(button => {
             button.addEventListener("click", function () {
-                const fugitiveId = this.dataset.id;
-                showDetails(fugitiveId);
+                showDetails(this.dataset.id);
             });
         });
 
         document.querySelectorAll(".delete-criminal").forEach(button => {
             button.addEventListener("click", function () {
-                const fugitiveId = this.dataset.id;
-                deleteFugitive(fugitiveId);
+                deleteFugitive(this.dataset.id);
             });
         });
     }
@@ -84,6 +85,33 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(() => fetchFugitives()); // Refresh list
     }
+
+    // Handle form submission (Newly added function)
+    function handleFormSubmit(event) {
+        event.preventDefault();
+
+        const newFugitive = {
+            name: nameInput.value,
+            image: imageInput.value,
+            description: descriptionInput.value
+        };
+
+        fetch("https://fireland-most-wanted.vercel.app/fugitives", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(newFugitive)
+        })
+        .then(response => response.json())
+        .then(addedFugitive => {
+            fugitivesData.push(addedFugitive); // Update local data
+            displayFugitives(fugitivesData); // Update UI without reload
+            addForm.reset(); // Clear form
+        })
+        .catch(error => console.log("Error adding fugitive:", error));
+    }
+
+    // Attach event listener to the form
+    addForm.addEventListener("submit", handleFormSubmit);
 
     // Close details
     closeButton.addEventListener("click", function () {
