@@ -4,6 +4,11 @@
     border: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -155,7 +160,8 @@ h1 {
     font-size: 14px;
     border-radius: 5px;
     transition: 0.3s;
-    box-shadow: 0 0 5px red;
+    box-shadow: 0 0 5px red; 
+    text-decoration: none;
 }
 
 .view-more:hover {
@@ -211,5 +217,3 @@ h1 {
     background: darkred;
     box-shadow: 0 0 20px red;
 }
-
-

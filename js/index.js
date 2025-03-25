@@ -34,12 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
             card.classList.add("criminal-card");
 
             card.innerHTML = `
-                <img src="${fugitive.image}" alt="${fugitive.name}">
-                <h2>${fugitive.name}</h2>
-                <p>${fugitive.description}</p>
-                <button class="view-more" data-id="${fugitive.id}">View More</button>
-                <button class="delete-criminal" data-id="${fugitive.id}">Delete</button>
-            `;
+            <img src="${fugitive.image}" alt="${fugitive.name}">
+            <h2>${fugitive.name}</h2>
+            <p>${fugitive.description}</p>
+            <a href="#details-section" class="view-more" data-id="${fugitive.id}">View More</a>
+            <button class="delete-criminal" data-id="${fugitive.id}">Delete</button>
+        `;
+        
 
             criminalsContainer.appendChild(card);
         });
