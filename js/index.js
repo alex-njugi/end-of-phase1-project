@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Fetch fugitives from db.json
     function fetchFugitives() {
-        fetch("http://localhost:3000/fugitives")
+        fetch("https://phase-1-project-ashen.vercel.app/fugitives")
             .then(response => response.json())
             .then(data => displayFugitives(data))
             .catch(error => console.log("Error fetching data:", error));
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Show fugitive details
     function showDetails(id) {
-        fetch(`http://localhost:3000/fugitives/${id}`)
+        fetch(`https://phase-1-project-ashen.vercel.app/fugitives/${id}`)
             .then(response => response.json())
             .then(fugitive => {
                 fugitiveName.textContent = fugitive.name;
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Delete fugitive
     function deleteFugitive(id) {
-        fetch(`http://localhost:3000/fugitives/${id}`, {
+        fetch(`https://phase-1-project-ashen.vercel.app/fugitives/${id}`, {
             method: "DELETE"
         })
         .then(() => fetchFugitives()); // Refresh list

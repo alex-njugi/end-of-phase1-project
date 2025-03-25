@@ -3,37 +3,37 @@
       {
         "id": 1,
         "name": "PANEK DANIEL TOMASZ",
-        "image": "images/daniel.png",
+        "image": "images/antony.png",
         "description": "Wanted for armed robbery."
       },
       {
         "id": 2,
         "name": "LAVRIC JANKO",
-        "image": "images/janko.png",
+        "image": "images/ismail.png",
         "description": "Crime : Unlawfull abductions."
       },
       {
         "id": 3,
         "name": "KANYS, RENALDAS",
-        "image": "images/kanys.png",
+        "image": "images/roman.png",
         "description": "Crime : Murder, grievous bodily injury."
       },
       {
         "id": 4,
         "name": "OUALI KARIM",
-        "image": "images/karim.png",
+        "image": "images/roscoe.png",
         "description": "Crime : Suspected in multiple fraud cases."
       },
       {
         "id": 5,
         "name": "ANDRIJA NIKOLIC",
-        "image": "images/nikolic.png",
+        "image": "images/silviu.png",
         "description": "Crime : Illicit trafficking in narcotic drugs."
       },
       {
         "id": 6,
         "name": "OKOLICANY ROBERT",
-        "image": "images/robert.png",
+        "image": "images/wolf.png",
         "description": "crime : Escaped convict, considered dangerous."
       }
     ]
