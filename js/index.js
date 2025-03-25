@@ -8,11 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const fugitiveDescription = document.getElementById("fugitive-description");
     const closeButton = document.getElementById("close-details");
 
+    let fugitivesData = []; // Store fetched data for filtering
+
     // Fetch fugitives from db.json
     function fetchFugitives() {
-        fetch("https://phase-1-project-ashen.vercel.app/fugitives")
+        fetch("https://fireland-most-wanted.vercel.app/fugitives")
             .then(response => response.json())
-            .then(data => displayFugitives(data))
+            .then(data => {
+                fugitivesData = data; // Save original data
+                displayFugitives(data); // Display all fugitives initially
+            })
             .catch(error => console.log("Error fetching data:", error));
     }
 
@@ -51,9 +56,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Search function
+    searchInput.addEventListener("input", function () {
+        const query = searchInput.value.toLowerCase();
+        const filteredFugitives = fugitivesData.filter(fugitive =>
+            fugitive.name.toLowerCase().includes(query)
+        );
+        displayFugitives(filteredFugitives);
+    });
+
     // Show fugitive details
     function showDetails(id) {
-        fetch(`https://phase-1-project-ashen.vercel.app/fugitives/${id}`)
+        fetch(`https://fireland-most-wanted.vercel.app/fugitives/${id}`)
             .then(response => response.json())
             .then(fugitive => {
                 fugitiveName.textContent = fugitive.name;
@@ -65,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Delete fugitive
     function deleteFugitive(id) {
-        fetch(`https://phase-1-project-ashen.vercel.app/fugitives/${id}`, {
+        fetch(`https://fireland-most-wanted.vercel.app/fugitives/${id}`, {
             method: "DELETE"
         })
         .then(() => fetchFugitives()); // Refresh list
@@ -84,4 +98,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Load fugitives when page loads
     fetchFugitives();
 });
-
