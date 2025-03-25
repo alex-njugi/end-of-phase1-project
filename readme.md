@@ -15,7 +15,7 @@
 
 6. commit your code regularly. Have atleast 20 commits
 
-7. create readme file and add the deployed line
+7. create readme file and add the deployed link
 
 8. submit your project repo on canvas
 
