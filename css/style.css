@@ -173,4 +173,43 @@ h1 {
     box-shadow: 0 0 10px red;
 }
 
+#add-fugitive-form {
+    background: #000;
+    padding: 30px;
+    padding-right:50px;
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid ;
+    box-shadow: 0 0 10px  #FFFDD0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#add-fugitive-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#add-fugitive-form button {
+    background: red;
+    color: white;
+    font-size: 15px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#add-fugitive-form button:hover {
+    background: darkred;
+    box-shadow: 0 0 20px red;
+}
+
 
