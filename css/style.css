@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
   
   #details-container {
-    display: none; /* Hidden by default */
+    display: none; 
     background: white;
     color: black;
     padding: 20px;
@@ -127,7 +127,7 @@ nav ul li a:hover {
 }
 
 #details-container img {
-    width: 200px; /* Adjust size */
+    width: 200px; 
     height: auto;
     margin-top: 10px;
 }
@@ -162,28 +162,28 @@ nav ul li a:hover {
     box-shadow: 0 0 20px red;
 }
 
-/* Image Styling */
+
 .criminal-card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-/* Name Styling */
+
 .criminal-card h3 {
     font-size: 18px;
     margin: 10px 0;
     color: black;
 }
 
-/* Description Styling */
+
 .criminal-card p {
     font-size: 14px;
     color: rgb(80, 80, 80);
     padding: 5px 10px;
 }
 
-/* Button Styling */
+
 .view-more, .delete-criminal {
     background-color: black;
     color: white;
@@ -253,8 +253,8 @@ nav ul li a:hover {
 }
 
 #about {
-    background-color: #111; /* Dark background for contrast */
-    color: white; /* White text for readability */
+    background-color: #111; 
+    color: white; 
     padding: 40px;
     border-radius: 8px;
     margin: 20px auto;
@@ -263,13 +263,13 @@ nav ul li a:hover {
 }
 
 #about h2 {
-    color: red; /* Theme color */
+    color: red; 
     font-size: 28px;
     margin-bottom: 15px;
 }
 
 #about h3 {
-    color: #ff4500; /* Slightly different shade of red for variation */
+    color: #ff4500; 
     font-size: 22px;
     margin-top: 20px;
 }
@@ -292,3 +292,34 @@ nav ul li a:hover {
     border-radius: 5px;
     font-weight: bold;
 }
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    color: red;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: red;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.social-icon:hover {
+    color: white;
+}
+
