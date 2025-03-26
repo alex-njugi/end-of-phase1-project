@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const imageInput = document.getElementById("fugitive-image-input");
     const descriptionInput = document.getElementById("fugitive-description-input");
 
-    let fugitivesData = []; // Store fetched data for filtering
+    let fugitivesData = []; 
 
-    // Fetch fugitives from db.json
+    // Fetch fugitives 
     function fetchFugitives() {
         fetch("https://fireland-most-wanted.vercel.app/fugitives")
             .then(response => response.json())
@@ -84,10 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch(`https://fireland-most-wanted.vercel.app/fugitives/${id}`, {
             method: "DELETE"
         })
-        .then(() => fetchFugitives()); // Refresh list
+        .then(() => fetchFugitives()); 
     }
 
-    // Handle form submission (Newly added function)
+    // form submission 
     function handleFormSubmit(event) {
         event.preventDefault();
 
@@ -104,9 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(response => response.json())
         .then(addedFugitive => {
-            fugitivesData.push(addedFugitive); // Update local data
-            displayFugitives(fugitivesData); // Update UI without reload
-            addForm.reset(); // Clear form
+            fugitivesData.push(addedFugitive); 
+            displayFugitives(fugitivesData); 
+            addForm.reset(); 
         })
         .catch(error => console.log("Error adding fugitive:", error));
     }
