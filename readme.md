@@ -20,4 +20,16 @@
 8. submit your project repo on canvas
 
 9. prepare to pressent your work on thursday
+
+
+
+### Repo link
+https://github.com/alex-njugi/end-of-phase1-project.git
+
+#### Live link
+https://end-of-phase1-project.vercel.app/
+
+## Deployed db.json link
+https://fireland-most-wanted.vercel.app/fugitives
+
  
