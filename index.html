@@ -8,10 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>Firelands Most Wanted</h1>
+        <div class="header-content">
+            <h1>FIRELAND'S MOST WANTED FUGITIVES</h1>
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+        </div>
+        <input type="text" id="search" placeholder="Search criminals...">
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#criminals-container">Fugitives</a></li>
                 <li><a href="#add-fugitive-form">Add Fugitive</a></li>
                 <li><a href="#about">About</a></li>
@@ -19,22 +23,21 @@
             </ul>
         </nav>
     </header>
-    
 
-    <div class="alert-container">
-        <button class="alert-button">Welcome</button>
-    </div>
-
-    <section id="details-section">
-        <div id="details-container" style="display: none;">
-            <h2 id="fugitive-name"></h2>
-            <img id="fugitive-image" src="" alt="Fugitive Image">
-            <p id="fugitive-description"></p>
-            <button id="close-details">Close</button>
-        </div>
-    </section>    
-    
     <main>
+        <div class="alert-container">
+            <button class="alert-button">Welcome</button>
+        </div>
+    
+        <section id="details-section">
+            <div id="details-container" style="display: none;">
+                <h2 id="fugitive-name"></h2>
+                <img id="fugitive-image" src="" alt="Fugitive Image">
+                <p id="fugitive-description"></p>
+                <button id="close-details">Close</button>
+            </div>
+        </section>    
+
         <div id="criminals-container"></div>
 
         <form id="add-fugitive-form">
@@ -43,6 +46,17 @@
             <input type="text" id="fugitive-description-input" placeholder="Commited Crime..." required>
             <button type="submit">Add Fugitive</button>
         </form>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Firelands Most Wanted is dedicated to tracking and reporting fugitives...</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@firelandsmostwanted.com</p>
+        </section>
+        
         
     </main>
     
