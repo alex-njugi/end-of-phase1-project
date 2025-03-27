@@ -1,3 +1,4 @@
+## Key Instructions
 1. a project of your choice 
 
 2. folder structure - 
@@ -20,9 +21,12 @@
 8. submit your project repo on canvas
 
 9. prepare to pressent your work on thursday
+   
 
 
 
+
+   
 ### Repo link
 https://github.com/alex-njugi/end-of-phase1-project.git
 

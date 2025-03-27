@@ -101,7 +101,9 @@ document.addEventListener("DOMContentLoaded", function () {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newFugitive)
-        })
+        }).then(() => {
+            window.location.reload()
+        })  
         .then(response => response.json())
         .then(addedFugitive => {
             fugitivesData.push(addedFugitive); 
